@@ -1,0 +1,237 @@
+:root {
+    --bg1: #9b59b6;
+    --bg2:#3498db;
+    --text: #26ade4;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: tahoma;
+    outline: none;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom right, var(--bg1),var(--bg2));
+}
+
+.clear {
+    clear: both;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    
+}
+
+
+section .container .formBox {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+section .container .formBox form {
+    position: relative;
+    width: 350px;
+    height: 550px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+section .container .formBox form h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 0.75cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+section .container .formBox form .inputBox {
+    position: relative;
+    margin-bottom: 40px;
+}
+section .container .formBox form .inputBox:last-child {
+    margin-bottom: 0px;
+}
+section .container .formBox form .inputBox input,
+section .container .formBox form .inputBox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid black;
+    resize: none;
+}
+section .container .formBox textarea {
+    height: 100px;
+}
+section .container .formBox input[type="submit"] {
+    background: black;
+    padding: 8px 20px;
+    margin-top: 5px;
+    width: 100%;
+    cursor: pointer;
+    background: chocolate;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+section .container .formBox input[type="submit"]:focus {
+    background: black;
+    color: white;
+}
+section .container .formBox span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: whitesmoke;
+    transition: all 0.2s;
+}
+section .container .formBox input:focus ~ span,
+section .container .formBox textarea:focus ~ span,
+section .container .formBox input:valid ~ span,
+section .container .formBox textarea:valid ~ span {
+    transform: translateY(-24px);
+    color: orange;
+    font-size: 14px;
+}
+section .container .formBox input:focus,
+section .container .formBox textarea:focus,
+section .container .formBox input:valid,
+section .container .formBox textarea:valid {
+    border-bottom-color: black;
+}
+section .container .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+section .container .imgBox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: bottom;
+    transform: skewX(-25deg) translate(10%);
+}
+section .container .imgBox img {
+    position: absolute;
+    margin-left: -35%;
+    bottom: 0;
+    height: 100%;
+    max-height: 95%;
+}
+@media (max-width: 911px) {
+    .container .formBox {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .container .imgBox {
+        display: none;
+    }
+}
+
+
+.auth-form_socials {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 55px;
+    
+   
+}
+
+.auth-form_socials a.btn-d {
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+    
+}
+.auth-form_socials a.btn-s {
+    padding-left: 80px;
+    display: flex;
+    font-size: 20px;
+    text-decoration: none;
+
+}
+button.btn.btn-primary {
+    width: 135px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:unset;
+    background: #1877f2;
+    color: #ffffff;
+}
+
+button.btn.btn-light {
+    width: 135px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius:unset;
+}
+
+span.or {
+    padding-left: 20%;
+}
+
+.or p {
+    color: #ffffff;
+}
+
+i {
+    padding-right: 12px;  
+    font-size: 20px;
+}
+
+.auth-form_aside {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+.auth-form_policy-link {
+    text-decoration: none;
+    color: coral;
+}
+
+.auth-form_asides {
+    margin-top: 45px;
+}
+
+.auth-form-text {
+    color: #ffffff;
+}

@@ -1,0 +1,450 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma,sans-serif;
+}
+.header-1{
+    background-color: black;
+
+}
+body{
+    background: white;
+}
+
+.container-header-1{
+    width: 1284px;
+    margin: 0 auto;
+    
+}
+.clear{
+    clear: both;
+}
+.header-1 .phone{
+    float: left;
+}
+.header-1 .phone span{
+    float: left;
+    line-height: 45px;
+    color: azure;
+}
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+.header-1 a:hover{
+    cursor: pointer;
+    text-decoration: none;
+    color:orange;
+}
+.login{
+    float: right;
+}
+.login span{
+    float: left;
+    line-height: 45px;
+    color: azure;
+    padding-left: 15px;
+}
+.login a{
+    padding: 0 25px;
+}
+hr{
+    width: 1920px;
+    margin-bottom: 5px;
+}
+header .container-header{
+    width: 1284px;
+    margin: 0 auto;
+}
+header .banner .logo{
+    float: left;
+    padding: 15px 0;
+}
+header .banner .img{
+    float: right;
+    padding: 35px 0;
+    margin-right: 35px;
+}
+
+
+nav .container-nav{
+    width: 1284px;
+    margin: 0 auto
+}
+nav .menu{
+    float: left;
+}
+nav .menu ul.root{
+    list-style: none;
+}
+nav .menu ul.root > li{
+    float: left;
+    text-decoration: none;
+    line-height: 45px;
+    padding: 0 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+}
+nav .menu ul.root li > a{
+    color: black;
+    display: block;
+}
+.menu ul.root ul.submenu li a{
+    color: black;
+}
+.menu ul.root ul.submenu li > a:hover{
+    color: orange;
+    text-decoration: none;
+}
+ul.submenu {
+    width: 292px;
+    background-color: gray;
+    display: none;
+    position: absolute;
+    list-style: none;
+}
+
+ul.submenu li a {
+    border-bottom: 1px solid black;
+    text-indent: 10px;
+}
+ul.submenu li a:hover {
+    text-decoration: underline;
+}
+ul.root > li:hover ul.submenu {
+    display: block;
+}
+
+
+nav .search-box{
+    position: relative;
+    float: right;
+    margin-right: 100px;
+    background: black;
+    height: 30px;
+    border-radius: 30px;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+nav a.search-btn {
+    color: black;
+    float: right;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: chocolate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+nav input.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
+}
+nav .search-box:hover > .search-txt {
+    width: 240px;
+    padding: 0 6px;
+}
+nav .search-box:hover > .search-btn {
+    background: white;
+}
+
+
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    background: white;
+}
+
+section .container{
+    position: relative;
+    max-width: 1584px;
+    width: 100%;
+    margin: 20px;
+    height: 600px;
+    background: white;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section .container .formBox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section .container .formBox form {
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 75px;
+}
+section .container .formBox form h2 {
+    color: black;
+    font-weight: 500;
+    font-size: 0.75cm;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 40px;
+}
+section .container .formBox form .inputBox {
+    position: relative;
+    margin-bottom: 40px;
+}
+section .container .formBox form .inputBox:last-child {
+    margin-bottom: 0px;
+}
+section .container .formBox form .inputBox input,
+section .container .formBox form .inputBox textarea {
+    position: relative;
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+    color: black;
+    padding-bottom: 10px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    border-bottom: 2px solid black;
+    resize: none;
+}
+section .container .formBox textarea {
+    height: 100px;
+}
+section .container .formBox input[type="submit"] {
+    background: black;
+    padding: 8px 20px;
+    margin-top: -10px;
+    width: 100px;
+    cursor: pointer;
+    background: coral;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+section .container .formBox input[type="submit"]:focus {
+    background: black;
+    color: white;
+}
+section .container .formBox span {
+    position: absolute;
+    left: 0;
+    font-size: 16px;
+    font-weight: 300;
+    display: inline-block;
+    pointer-events: none;
+    letter-spacing: 1px;
+    color: gray;
+    transition: all 0.2s;
+}
+section .container .formBox input:focus ~ span,
+section .container .formBox textarea:focus ~ span,
+section .container .formBox input:valid ~ span,
+section .container .formBox textarea:valid ~ span {
+    transform: translateY(-24px);
+    color: orange;
+    font-size: 14px;
+}
+section .container .formBox input:focus,
+section .container .formBox textarea:focus,
+section .container .formBox input:valid,
+section .container .formBox textarea:valid {
+    border-bottom-color: black;
+}
+section .container .imgBox {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+section .container .imgBox:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transform-origin: bottom;
+    transform: skewX(-25deg) translate(10%);
+}
+section .container .imgBox img {
+    position: absolute;
+    margin-left: -35%;
+    bottom: 0;
+    height: 100%;
+    max-height: 95%;
+}
+@media (max-width: 911px) {
+    .container .formBox {
+        width: 100%;
+        padding: 0 50px;
+    }
+    .container .imgBox {
+        display: none;
+    }
+}
+
+section .container .new-banner {
+    float: left;
+    width: 50%;
+    padding: 1% 1%;
+    margin: 1% 1%;
+    background-color: white;
+}
+
+footer{
+    background-color: dimgray;
+    height:550px;
+    box-sizing: border-box;
+    background-size: cover;
+}
+footer .container-footer{
+    width: 1284px;
+    margin: 0 auto;
+    
+}
+footer .banner {
+    float: left;
+    width: 25%;
+    padding: 1% 2.5%;
+    margin: 2% 1.5%;
+    background-color: dimgray;
+}
+footer .banner iframe {
+    width: 150%;
+    padding-left: 2%;
+}
+footer .container-footer h2 {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+footer .container-footer hr {
+    width: 50px;
+    border: 2px orange solid;
+    margin-bottom: 30px;
+    
+}
+footer .contact-info {
+    width: 100%;
+    padding-top: 2%;
+    padding-left: 1%;
+    margin-bottom: 3px;
+}
+
+footer h3 {
+    top: 10px;
+    text-transform: uppercase;
+    color: chocolate;
+}
+footer .card {
+    width: 300px;
+    height: 35px;
+    background-color: dimgray;
+    margin-left: -10px;
+    font-size: 18px;
+}
+footer .card .card-icon {
+    color: orange;
+    margin-right: 1rem;
+    margin: -1px 8px 0 0;
+}
+footer .middle {
+    position: absolute;
+    padding-top: 2%;
+    padding-left: 1%;
+    transform: translate(-20%, -20%);
+    text-align: center;
+}
+footer .btn {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #f1f1f1;
+    margin: 10px;
+    border-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    overflow: hidden;
+    position: relative;
+}
+footer .btn i {
+    line-height: 40px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+footer .btn:hover i {
+    transform: scale(1.3);
+    color: #f1f1f1;
+}
+footer .btn::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: #3498db;
+    transform: rotate(45deg);
+    left: -110%;
+    top: 90%;
+}
+footer .btn:hover:before {
+    animation: aaa 0.7s 1;
+    top: -10%;
+    left: -10%;
+}
+@keyframes aaa {
+    0% {
+        top: -110%;
+        left: 90%;
+    }
+    50% {
+        top: 10%;
+        left: -30%;
+    }
+    100% {
+        top: -10%;
+        left: -10%;
+    }
+}
+
+
+.auth-form {
+    display: block;
+    background: white;
+}
+.auth-form_container {
+    padding: 0 32px;
+}
+
+.test {
+    background-color: black;
+    line-height: 55px;
+}
+.line {
+    text-align: center;
+    color: white;
+}
+.line a:hover {
+    color: chocolate;
+}
